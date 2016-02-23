@@ -1,0 +1,26 @@
+body#frontpage div.container-fluid {
+    height: 1200px;
+    background-image: url(../images/background/berlin-calling.jpg);
+    background-position: center bottom;
+    color: white;
+    text-shadow: 0 0 2px black;
+}
+
+body#frontpage a {
+    color: white;
+}
+
+body#frontpage a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+body#frontpage img#maltehuebner {
+    width: 45%;
+    height: 45%;
+}
+
+body div.header {
+    height: 250px;
+    background-position: center;
+}
