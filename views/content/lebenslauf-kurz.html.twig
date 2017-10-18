@@ -2,27 +2,18 @@
 
 {% set headerImage = 'amsterdam.jpg' %}
 
-{% block pageContent %}
-<div class="row m-t-1">
-    <div class="col-md-12">
-        <ol class="breadcrumb">
-            <li>
-                <a href="{{ path('page', { slug: 'index' }) }}">
-                    Home
-                </a>
-            </li>
-            <li>
-                <a href="{{ path('page', { slug: 'lebenslauf' }) }}">
-                    Lebenslauf
-                </a>
-            </li>
-            <li class="active">
-                tl;dr
-            </li>
-        </ol>
-    </div>
-</div>
+{% block breadcrumb %}
+<li>
+    <a href="{{ path('page', { slug: 'lebenslauf' }) }}">
+        Lebenslauf
+    </a>
+</li>
+<li class="active">
+    tl;dr
+</li>
+{% endblock %}
 
+{% block pageContent %}
 <div class="row">
     <div class="col-md-12">
         <h1>

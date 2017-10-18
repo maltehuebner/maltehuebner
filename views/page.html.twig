@@ -10,6 +10,8 @@
         </div>
         {% endif %}
 
+        {% block breadcrumbContainer %}
+        {% if block('breadcrumb') %}
         <div class="row m-t-1">
             <div class="col-md-12">
                 <ol class="breadcrumb">
@@ -18,12 +20,12 @@
                             Home
                         </a>
                     </li>
-                    <li class="active">
-                        Studium
-                    </li>
+                    {% block breadcrumb %}{% endblock %}
                 </ol>
             </div>
         </div>
+        {% endif %}
+        {% endblock %}
 
         {% block pageContent %}
         {% endblock %}
