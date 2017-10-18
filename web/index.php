@@ -11,9 +11,9 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 ));
 
 $app->get('/{slug}', function (\Silex\Application $app, string $slug) {
-    return $app['twig']->render('hello.twig', array(
-        'slug' => $slug,
-    ));
+    $templateFilename = sprintf('content/%s.html.twig', $slug);
+
+    return $app['twig']->render($templateFilename);
 });
 
 $app->run();
