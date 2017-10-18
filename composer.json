@@ -7,5 +7,7 @@
             "email": "maltehuebner@gmx.org"
         }
     ],
-    "require": {}
+    "require": {
+        "silex/silex": "~2.0"
+    }
 }
