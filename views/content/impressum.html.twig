@@ -1,64 +1,35 @@
-{% extends 'layout.html.twig' %}
+{% extends 'page.html.twig' %}
 
-{% block bodyContent %}
-<div class="container">
-    <div class="row">
-        <div class="col-md-12 header" style="background-image: url(/images/header/hansa-park.jpg);">
+{% set headerImage = 'hansa-park.jpg' %}
 
-        </div>
+{% block pageContent %}
+<div class="row">
+    <div class="col-md-12">
+        <h1>
+            Impressum
+        </h1>
     </div>
+</div>
 
-    <div class="row m-t-1">
-        <div class="col-md-12">
-            <ol class="breadcrumb">
-                <li>
-                    <a href="{{ path('page', { slug: 'index' }) }}">
-                        Home
-                    </a>
-                </li>
-                <li class="active">
-                    Impressum
-                </li>
-            </ol>
-        </div>
-    </div>
+<div class="row">
+    <div class="col-md-12">
+        <p>
+            Angaben gemäß § 5 TMG:
+        </p>
 
-    <div class="row">
-        <div class="col-md-12">
-            <h1>
-                Impressum
-            </h1>
-        </div>
-    </div>
+        <p>
+            Malte Hübner
+            <br />
+            Mühlenaustieg 10
+            <br />
+            22523 Hamburg
+        </p>
 
-    <div class="row">
-        <div class="col-md-12">
-            <p>
-                Angaben gemäß § 5 TMG:
-            </p>
-
-            <p>
-                Malte Hübner
-                <br />
-                Mühlenaustieg 10
-                <br />
-                22523 Hamburg
-            </p>
-
-            <p>
-                E-Mail: <a href="mailto:maltehuebner@gmx.org">maltehuebner@gmx.org</a>
-                <br />
-                Telefon: 0700 11 864 833
-            </p>
-        </div>
-    </div>
-
-    <div class="row m-b-1">
-        <div class="col-md-12">
-            <footer class="text-xs-center">
-                Malte Hübner &bull; <a href="{{ path('page', { slug: 'impressum' }) }}">Impressum</a> &bull; <a href="http://sqi.be/h140g">GitHub</a>
-            </footer>
-        </div>
+        <p>
+            E-Mail: <a href="mailto:maltehuebner@gmx.org">maltehuebner@gmx.org</a>
+            <br />
+            Telefon: 0700 11 864 833
+        </p>
     </div>
 </div>
 {% endblock %}
