@@ -1,0 +1,11 @@
+{
+    "name": "maltehuebner/website",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Malte Hübner",
+            "email": "maltehuebner@gmx.org"
+        }
+    ],
+    "require": {}
+}
