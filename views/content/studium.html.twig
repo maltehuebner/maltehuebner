@@ -12,7 +12,7 @@
         <div class="col-md-12">
             <ol class="breadcrumb">
                 <li>
-                    <a href="./index.html">
+                    <a href="{{ path('page', { slug: 'index' }) }}">
                         Home
                     </a>
                 </li>
@@ -264,7 +264,7 @@
     <div class="row m-b-1">
         <div class="col-md-12">
             <footer class="text-xs-center">
-                Malte Hübner &bull; <a href="impressum.html">Impressum</a> &bull; <a href="http://sqi.be/h140g">GitHub</a>
+                Malte Hübner &bull; <a href="{{ path('impressum', { slug: 'index' }) }}">Impressum</a> &bull; <a href="http://sqi.be/h140g">GitHub</a>
             </footer>
         </div>
     </div>
