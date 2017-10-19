@@ -11,7 +11,7 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 ));
 
 $app->get('/', function (\Silex\Application $app) {
-    $knowledge = ['QF-Test', 'Oberflächentests', 'Symfony', 'Silex', 'Wordpress', 'PHP', 'MySQL', 'Java', 'Jenkins', 'Radfahren', 'Radverkehrspolitik', 'Bürgerbeteiligung', 'Critical Mass', 'Fotografie', 'Informatik', 'Medieninformatik', 'Computergrafik', 'HTML5', 'CSS3', 'Linux', 'Apache', 'nginx', 'Adobe Photoshop', 'Journalismus', 'Testlink', 'Selenium', 'JBehave', 'SonarQube', 'jQuery', 'Cucumber', 'JavaScript', 'Jira', 'Confluence', 'git', 'Geolocation', 'OpenStreetMap', 'Bootstrap', 'Leaflet', 'NodeJs', 'Express.js', 'SCSS', 'GitLab', 'GitHub'];
+    $knowledge = ['QF-Test', 'Oberflächentests', 'Symfony', 'Silex', 'Wordpress', 'Composer', 'PHP7', 'MySQL', 'Java', 'Jenkins', 'Radfahren', 'Radverkehrspolitik', 'Bürgerbeteiligung', 'Critical Mass', 'Fotografie', 'Informatik', 'Medieninformatik', 'Computergrafik', 'HTML5', 'CSS3', 'Linux', 'Apache', 'nginx', 'Adobe Photoshop', 'Journalismus', 'Testlink', 'Selenium', 'JBehave', 'SonarQube', 'jQuery', 'Cucumber', 'JavaScript', 'Jira', 'Confluence', 'git', 'Geolocation', 'OpenStreetMap', 'Bootstrap', 'Leaflet', 'NodeJs', 'Express.js', 'SCSS', 'GitLab', 'GitHub'];
     natcasesort($knowledge);
 
     return $app['twig']->render('content/index.html.twig', ['knowledge' => $knowledge]);
