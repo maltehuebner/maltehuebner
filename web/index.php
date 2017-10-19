@@ -14,6 +14,6 @@ $app->get('/{slug}', function (\Silex\Application $app, string $slug) {
     $templateFilename = sprintf('content/%s.html.twig', $slug);
 
     return $app['twig']->render($templateFilename);
-})->bind('page');
+})->bind('page')->value('slug', 'index');
 
 $app->run();
