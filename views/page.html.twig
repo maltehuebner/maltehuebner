@@ -14,14 +14,16 @@
         {% if block('breadcrumb') %}
         <div class="row mt-1">
             <div class="col-md-12">
-                <ol class="breadcrumb">
-                    <li>
-                        <a href="{{ path('page', { slug: 'index' }) }}">
-                            Home
-                        </a>
-                    </li>
-                    {% block breadcrumb %}{% endblock %}
-                </ol>
+                <nav aria-label="breadcrumb" role="navigation">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="{{ path('page', { slug: 'index' }) }}">
+                                Home
+                            </a>
+                        </li>
+                        {% block breadcrumb %}{% endblock %}
+                    </ol>
+                </nav>
             </div>
         </div>
         {% endif %}
