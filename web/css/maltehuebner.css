@@ -23,7 +23,7 @@ body#frontpage img#maltehuebner {
 div.jumbotron h1 {
     text-align: right;
     color: white;
-    text-shadow: 1px 1px black;
+    text-shadow: 0 0 2px black;
 }
 
 img.img-circle {
