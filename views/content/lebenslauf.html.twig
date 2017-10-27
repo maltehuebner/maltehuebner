@@ -1,7 +1,5 @@
 {% extends 'page.html.twig' %}
 
-{% set headerImage = 'wedel.jpg' %}
-
 {% block breadcrumb %}
 <li class="breadcrumb-item active">
     Lebenslauf
@@ -9,6 +7,16 @@
 {% endblock %}
 
 {% block pageContent %}
+<div class="row">
+    <div class="col-12">
+        <div class="jumbotron" style="background-image: url(/images/header/wedel.jpg)">
+            <h1 class="display-4">
+                Hej, ich bin’s!
+            </h1>
+        </div>
+    </div>
+</div>
+
 <div class="row">
     <div class="col-12">
         <div class="alert alert-info" role="alert">

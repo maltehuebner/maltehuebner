@@ -2,14 +2,6 @@
 
 {% block bodyContent %}
     <div class="container">
-        {% if headerImage is defined %}
-        <div class="row">
-            <div class="col-md-12 header" style="background-image: url(/images/header/{{ headerImage }});">
-
-            </div>
-        </div>
-        {% endif %}
-
         {% block breadcrumbContainer %}
         {% if block('breadcrumb') %}
         <div class="row mt-3 mb-3">
@@ -17,7 +9,7 @@
                 <nav aria-label="breadcrumb" role="navigation">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
-                            <a href="{{ path('page', { slug: 'index' }) }}">
+                            <a href="/">
                                 Home
                             </a>
                         </li>
