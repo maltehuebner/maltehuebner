@@ -16,11 +16,16 @@ body#frontpage a:hover {
 }
 
 body#frontpage img#maltehuebner {
-    width: 45%;
-    height: 45%;
+    width: 240px;
+    height: 240px;
 }
 
-body div.header {
-    height: 250px;
-    background-position: center;
+div.jumbotron h1 {
+    text-align: right;
+    color: white;
+    text-shadow: 0 0 2px black;
+}
+
+img.img-circle {
+    border-radius: 50%;
 }

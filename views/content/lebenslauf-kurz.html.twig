@@ -1,29 +1,29 @@
 {% extends 'page.html.twig' %}
 
-{% set headerImage = 'amsterdam.jpg' %}
-
 {% block breadcrumb %}
-<li>
+<li class="breadcrumb-item">
     <a href="{{ path('page', { slug: 'lebenslauf' }) }}">
         Lebenslauf
     </a>
 </li>
-<li class="active">
+<li class="breadcrumb-item active">
     tl;dr
 </li>
 {% endblock %}
 
 {% block pageContent %}
 <div class="row">
-    <div class="col-md-12">
-        <h1>
-            tl;dr
-        </h1>
+    <div class="col-12">
+        <div class="jumbotron" style="background-image: url(/images/header/amsterdam.jpg)">
+            <h1 class="display-4">
+                tl;dr
+            </h1>
+        </div>
     </div>
 </div>
 
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-12">
         <p class="lead">
             Mein Leben als kurze Zusammenfassung.
         </p>
@@ -31,7 +31,7 @@
 </div>
 
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-12">
         <h3>
             Leben
         </h3>
@@ -39,7 +39,7 @@
 </div>
 
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-12">
         <table class="table">
             <tbody>
                 <tr>
@@ -66,7 +66,7 @@
 </div>
 
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-12">
         <h3>
             Bildung
         </h3>
@@ -74,7 +74,7 @@
 </div>
 
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-12">
         <table class="table">
             <tbody>
                 <tr>
@@ -117,9 +117,9 @@
 </div>
 
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-6">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-12">
                 <h3>
                     Arbeit
                 </h3>
@@ -127,33 +127,28 @@
         </div>
 
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-12">
                 <table class="table">
                     <tbody>
                         <tr>
                             <td style="width: 170px;">
-                                April 2012 bis März 2013
+                                seit April 2016
                             </td>
+
                             <td>
-                                Werkstudent bei der ICANS GmbH, Hamburg
+                                Software-Entwickler bei der Bornholdt Lee GmbH, Hamburg
                             </td>
                         </tr>
+
                         <tr>
                             <td style="width: 170px;">
-                                April 2013 bis Mai 2013
+                                Juni 2015 bis März 2016
                             </td>
                             <td>
-                                Praktikant bei der ICANS GmbH, Hamburg
+                                Software-Entwickler bei der HealthCare United GmbH & Co. KG, Hamburg
                             </td>
                         </tr>
-                        <tr>
-                            <td style="width: 170px;">
-                                Juni 2013 bis August 2014
-                            </td>
-                            <td>
-                                Werkstudent bei der PARSHIP GmbH, Hamburg
-                            </td>
-                        </tr>
+
                         <tr>
                             <td style="width: 170px;">
                                 September 2014 bis Mai 2015
@@ -162,12 +157,31 @@
                                 Werkstudent bei der Jimdo GmbH, Hamburg
                             </td>
                         </tr>
+
                         <tr>
                             <td style="width: 170px;">
-                                seit Juni 2015
+                                Juni 2013 bis August 2014
                             </td>
                             <td>
-                                Software-Entwickler bei der HealthCare United GmbH & Co. KG, Hamburg
+                                Werkstudent bei der PARSHIP GmbH, Hamburg
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 170px;">
+                                April 2013 bis Mai 2013
+                            </td>
+                            <td>
+                                Praktikant bei der ICANS GmbH, Hamburg
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 170px;">
+                                April 2012 bis März 2013
+                            </td>
+                            <td>
+                                Werkstudent bei der ICANS GmbH, Hamburg
                             </td>
                         </tr>
                     </tbody>
@@ -175,9 +189,10 @@
             </div>
         </div>
     </div>
-    <div class="col-md-6">
+
+    <div class="col-6">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-12">
                 <h3>
                     Tätigkeiten
                 </h3>
@@ -185,57 +200,18 @@
         </div>
 
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-12">
                 <table class="table">
                     <tbody>
                         <tr>
                             <td style="width: 170px;">
-                                1999 bis 2004
+                                2011 bis 2015
                             </td>
                             <td>
-                                Leichtathletik im Büdelsdorfer Turn- und Sportverein
+                                Autor im Weblog Radverkehrspolitik
                             </td>
                         </tr>
-                        <tr>
-                            <td style="width: 170px;">
-                                seit 2001
-                            </td>
-                            <td>
-                                Design und Entwicklung verschiedener Internetseiten
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 170px;">
-                                2004
-                            </td>
-                            <td>
-                                Schulpraktikum bei der Sparkasse Mittelholstein, Rendsburg
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 170px;">
-                                2005 bis 2009
-                            </td>
-                            <td>
-                                Freier Mitarbeiter der Schleswig-Holsteinischen Landeszeitung
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 170px;">
-                                2006 bis 2009
-                            </td>
-                            <td>
-                                ehrenamtliche Fotografie und technische Unterstützung bei mehreren Veranstaltungen in Rendsburg
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 170px;">
-                                2007
-                            </td>
-                            <td>
-                                Schulpraktikum beim Schleswig-Holsteinischen Zeitungsverlag, Rendsburg
-                            </td>
-                        </tr>
+
                         <tr>
                             <td style="width: 170px;">
                                 2007 bis 2008
@@ -244,12 +220,58 @@
                                 Geschäftsführer und Entwickler in der Schülerfirma „United Colors sGmbH“
                             </td>
                         </tr>
+
                         <tr>
                             <td style="width: 170px;">
-                                2011 bis 2015
+                                2007
                             </td>
                             <td>
-                                Autor im Weblog Radverkehrspolitik
+                                Schulpraktikum beim Schleswig-Holsteinischen Zeitungsverlag, Rendsburg
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 170px;">
+                                2006 bis 2009
+                            </td>
+                            <td>
+                                ehrenamtliche Fotografie und technische Unterstützung bei mehreren Veranstaltungen in Rendsburg
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 170px;">
+                                2005 bis 2009
+                            </td>
+                            <td>
+                                Freier Mitarbeiter der Schleswig-Holsteinischen Landeszeitung
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 170px;">
+                                2004
+                            </td>
+                            <td>
+                                Schulpraktikum bei der Sparkasse Mittelholstein, Rendsburg
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 170px;">
+                                seit 2001
+                            </td>
+                            <td>
+                                Design und Entwicklung verschiedener Internetseiten
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 170px;">
+                                1999 bis 2004
+                            </td>
+                            <td>
+                                Leichtathletik im Büdelsdorfer Turn- und Sportverein
                             </td>
                         </tr>
                     </tbody>
