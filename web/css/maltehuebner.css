@@ -1,7 +1,9 @@
 body#frontpage div.container-fluid {
-    height: 1200px;
+    height: 1000px;
     background-image: url(../images/background/berlin-calling.jpg);
     background-position: center bottom;
+    background-color: black;
+    background-size: cover;
     color: white;
     text-shadow: 0 0 2px black;
 }
