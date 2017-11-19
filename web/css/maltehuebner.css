@@ -4,8 +4,9 @@ body#frontpage div.container-fluid {
     background-position: center bottom;
     background-color: black;
     background-size: cover;
+    background-repeat: no-repeat;
     color: white;
-    text-shadow: 0 0 2px black;
+    text-shadow: 0 0 3px black;
 }
 
 body#frontpage a {
@@ -20,6 +21,10 @@ body#frontpage a:hover {
 body#frontpage img#maltehuebner {
     width: 240px;
     height: 240px;
+}
+
+body#frontpage {
+    background: black;
 }
 
 div.jumbotron h1 {
