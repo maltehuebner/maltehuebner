@@ -31,16 +31,29 @@
             <div class="row mt-1">
                 <div class="col-12">
                     <h3 class="text-center">
+                        <i class="fa fa-check"></i>
+                        Fähigkeiten
+                    </h3>
+
+                    <ul class="list-inline text-center">
+                        {% for item in knowledge %}
+                            <li class="list-inline-item">
+                                {{ item }}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row mt-1">
+                <div class="col-12">
+                    <h3 class="text-center">
                         <i class="fa fa-file-text-o"></i>
                         <a href="{{ path('page', { slug: 'lebenslauf' }) }}">
                             Lebenslauf
                         </a>
                     </h3>
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="col-12">
                     <p class="text-center">
                         Von 1988 bis heute: Mein Leben als ausführliche Langversion oder <a href="{{ path('page', { slug: 'lebenslauf-kurz' }) }}">übersichtliche Tabelle</a>.
                     </p>
@@ -55,11 +68,7 @@
                             Projekte
                         </a>
                     </h3>
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="col-12">
                     <p class="text-center">
                         Was ich außer Radfahren und Symfony so treibe.
                     </p>
@@ -74,35 +83,10 @@
                             Studium
                         </a>
                     </h3>
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="col-12">
                     <p class="text-center">
-                        Übersicht über sechs Jahre Informatik am Elbhochufer.
+                        Eine grobe Übersicht über sechs Jahre Medieninformatik und IT-Sicherheit an der Fachhochschule Wedel.
                     </p>
-                </div>
-            </div>
-
-            <div class="row mt-1">
-                <div class="col-12">
-                    <h3 class="text-center">
-                        <i class="fa fa-check"></i>
-                        Fähigkeiten
-                    </h3>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-12">
-                    <ul class="list-inline text-center">
-                        {% for item in knowledge %}
-                         <li class="list-inline-item">
-                            {{ item }}
-                        </li>
-                        {% endfor %}
-                    </ul>
                 </div>
             </div>
         </div>
