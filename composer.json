@@ -11,5 +11,10 @@
         "silex/silex": "~2.0",
         "twig/twig": "^2.4",
         "symfony/twig-bridge": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Malte\\": "src/"
+        }
     }
 }
