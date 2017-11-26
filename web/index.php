@@ -11,7 +11,7 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 ));
 
 $app->get('/', function (\Silex\Application $app) {
-    $knowledge = ['QF-Test', 'Oberflächentests', 'Symfony', 'Silex', 'Wordpress', 'Composer', 'PHP7', 'MySQL', 'Java', 'Jenkins', 'Radfahren', 'Radverkehrspolitik', 'Bürgerbeteiligung', 'Critical Mass', 'Fotografie', 'Informatik', 'Medieninformatik', 'Computergrafik', 'HTML5', 'CSS3', 'Linux', 'Apache', 'nginx', 'Adobe Photoshop', 'Journalismus', 'Testlink', 'Selenium', 'JBehave', 'SonarQube', 'jQuery', 'Cucumber', 'JavaScript', 'Jira', 'Confluence', 'git', 'Geolocation', 'OpenStreetMap', 'Bootstrap', 'Leaflet', 'NodeJs', 'Express.js', 'SCSS', 'GitLab', 'GitHub', 'Verkehrsrecht', 'Elasticsearch', 'Microservices', 'REST', 'Softwarearchitektur', 'Continuous Deployment', 'Objektorientierte Programmierung'];
+    $knowledge = ['QF-Test', 'Oberflächentests', 'Symfony', 'Silex', 'Wordpress', 'Composer', 'PHP', 'PHP 7.2', 'MySQL', 'Java', 'Jenkins', 'Radfahren', 'Radverkehrspolitik', 'Bürgerbeteiligung', 'Critical Mass', 'Fotografie', 'Informatik', 'Medieninformatik', 'Computergrafik', 'Plesk', 'HTML5', 'CSS3', 'Linux', 'Apache', 'nginx', 'Adobe Photoshop', 'Journalismus', 'Testlink', 'Selenium', 'JBehave', 'SonarQube', 'jQuery', 'Cucumber', 'JavaScript', 'Jira', 'Confluence', 'git', 'Geolocation', 'OpenStreetMap', 'Bootstrap', 'Leaflet', 'NodeJs', 'Express.js', 'SCSS', 'GitLab', 'GitHub', 'Verkehrsrecht', 'Elasticsearch', 'Microservices', 'REST', 'Softwarearchitektur', 'Continuous Deployment', 'Objektorientierte Programmierung'];
     natcasesort($knowledge);
 
     return $app['twig']->render('content/index.html.twig', ['knowledge' => $knowledge]);
