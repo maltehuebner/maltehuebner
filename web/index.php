@@ -17,6 +17,12 @@ $app->get('/', function (\Silex\Application $app) {
     return $app['twig']->render('content/index.html.twig', ['knowledge' => $knowledge]);
 })->bind('index');
 
+$app->get('/{slug}.html', function (\Silex\Application $app, string $slug) {
+    $templateFilename = sprintf('content/%s.html.twig', $slug);
+
+    return $app['twig']->render($templateFilename);
+})->bind('legacy-page');
+
 $app->get('/{slug}', function (\Silex\Application $app, string $slug) {
     $templateFilename = sprintf('content/%s.html.twig', $slug);
 
