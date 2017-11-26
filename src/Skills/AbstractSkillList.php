@@ -4,7 +4,7 @@ namespace Malte\Skills;
 
 abstract class AbstractSkillList implements SkillListInterface
 {
-    protected $list = ['QF-Test', 'Oberflächentests', 'Symfony', 'Silex', 'Wordpress', 'Composer', 'PHP', 'PHP 7.2', 'MySQL', 'Java', 'Jenkins', 'Radfahren', 'Radverkehrspolitik', 'Bürgerbeteiligung', 'Critical Mass', 'Fotografie', 'Informatik', 'Medieninformatik', 'Computergrafik', 'Plesk', 'HTML5', 'CSS3', 'Linux', 'Apache', 'nginx', 'Adobe Photoshop', 'Journalismus', 'Testlink', 'Selenium', 'JBehave', 'SonarQube', 'jQuery', 'Cucumber', 'JavaScript', 'Jira', 'Confluence', 'git', 'Geolocation', 'OpenStreetMap', 'Bootstrap', 'Leaflet', 'NodeJs', 'Express.js', 'SCSS', 'GitLab', 'GitHub', 'Verkehrsrecht', 'Elasticsearch', 'Microservices', 'REST', 'Softwarearchitektur', 'Continuous Deployment', 'Objektorientierte Programmierung'];
+    protected $list = [];
 
     public function __construct()
     {

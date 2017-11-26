@@ -25,4 +25,24 @@
     </div>
 </div>
 
+<div class="row mt-3">
+    <div class="col-12 col-md-8 offset-md-2 text-center">
+        <h4>
+            Technologien
+        </h4>
+
+        <p class="lead">
+            Ich habe Erfahrungen mit folgenden Themen:
+        </p>
+
+        <ul class="list-inline">
+            {% for skill in skills %}
+                <li class="list-inline-item">
+                    {{ skill }}
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
 {% endblock %}

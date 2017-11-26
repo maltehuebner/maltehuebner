@@ -1,6 +1,7 @@
 <?php
 
-use Malte\Skills;
+use Malte\Skills\BikeSkillList;
+use Malte\Skills\WebSkillList;
 
 require_once __DIR__.'/../vendor/autoload.php';
 
@@ -13,13 +14,13 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 ));
 
 $app->get('/', function (\Silex\Application $app) {
-    return $app['twig']->render('content/index.html.twig', ['skills' => (new Skills())->getList()]);
+    return $app['twig']->render('content/index.html.twig', ['skills' => (new BikeSkillList())->getList()]);
 })->bind('index');
 
 $app->get('/{slug}', function (\Silex\Application $app, string $slug) {
     $templateFilename = sprintf('content/%s.html.twig', $slug);
 
-    return $app['twig']->render($templateFilename, ['skills' => (new Skills())->getList()]);
+    return $app['twig']->render($templateFilename, ['skills' => (new WebSkillList())->getList()]);
 })->bind('page');
 
 $app->run();
