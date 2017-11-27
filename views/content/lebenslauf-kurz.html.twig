@@ -1,283 +1,195 @@
 {% extends 'page.html.twig' %}
 
 {% block breadcrumb %}
-<li class="breadcrumb-item">
-    <a href="{{ path('page', { slug: 'lebenslauf' }) }}">
-        Lebenslauf
-    </a>
-</li>
-<li class="breadcrumb-item active">
-    tl;dr
-</li>
+    <li class="breadcrumb-item">
+        <a href="{{ path('page', { slug: 'lebenslauf' }) }}">
+            Lebenslauf
+        </a>
+    </li>
+    <li class="breadcrumb-item active">
+        tl;dr
+    </li>
 {% endblock %}
 
 {% block pageContent %}
-<div class="row">
-    <div class="col-12">
-        <div class="jumbotron" style="background-image: url(/images/header/amsterdam.jpg)">
-            <h1 class="display-4">
-                tl;dr
-            </h1>
-        </div>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-12">
-        <p class="lead">
-            Mein Leben als kurze Zusammenfassung.
-        </p>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-12">
-        <h3>
-            Leben
-        </h3>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-12">
-        <table class="table">
-            <tbody>
-                <tr>
-                    <td style="width: 170px;">
-                        geboren
-                    </td>
-                    <td>
-                        im Herbst 1988 in Rendsburg, Schleswig-Holstein
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width: 170px;">
-                        Eltern
-                    </td>
-                    <td>
-                        Magdalena Kobold-Hübner, Studienrätin
-                        <br />
-                        Rainer Hübner, Oberstudienrat
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-12">
-        <h3>
-            Bildung
-        </h3>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-12">
-        <table class="table">
-            <tbody>
-                <tr>
-                    <td style="width: 170px;">
-                        2014 bis 2015
-                    </td>
-                    <td>
-                        Studium an der Fachhochschule Wedel, Studiengang Master IT-Sicherheit und Master Informatik (abgebrochen)
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width: 170px;">
-                        2009 bis 2014
-                    </td>
-                    <td>
-                        Studium an der Fachhochschule Wedel, Studiengang Bachelor Medieninformatik
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width: 170px;">
-                        1999 bis 2008
-                    </td>
-                    <td>
-                        Gymnasium-Kronwerk, Rendsburg
-                        <br />
-                        Schulabschluss: Allgemeine Hochschulreife
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width: 170px;">
-                        1995 bis 1999
-                    </td>
-                    <td>
-                        Friedrich-Ebert-Grundschule, Büdelsdorf
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-6">
-        <div class="row">
-            <div class="col-12">
-                <h3>
-                    Arbeit
-                </h3>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                <table class="table">
-                    <tbody>
-                        <tr>
-                            <td style="width: 170px;">
-                                seit April 2016
-                            </td>
-
-                            <td>
-                                Software-Entwickler bei der Bornholdt Lee GmbH, Hamburg
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td style="width: 170px;">
-                                Juni 2015 bis März 2016
-                            </td>
-                            <td>
-                                Software-Entwickler bei der HealthCare United GmbH & Co. KG, Hamburg
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td style="width: 170px;">
-                                September 2014 bis Mai 2015
-                            </td>
-                            <td>
-                                Werkstudent bei der Jimdo GmbH, Hamburg
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td style="width: 170px;">
-                                Juni 2013 bis August 2014
-                            </td>
-                            <td>
-                                Werkstudent bei der PARSHIP GmbH, Hamburg
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td style="width: 170px;">
-                                April 2013 bis Mai 2013
-                            </td>
-                            <td>
-                                Praktikant bei der ICANS GmbH, Hamburg
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td style="width: 170px;">
-                                April 2012 bis März 2013
-                            </td>
-                            <td>
-                                Werkstudent bei der ICANS GmbH, Hamburg
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+    <div class="row">
+        <div class="col-12">
+            <div class="jumbotron" style="background-image: url(/images/header/amsterdam.jpg)">
+                <h1 class="display-4">
+                    tl;dr
+                </h1>
             </div>
         </div>
     </div>
 
-    <div class="col-6">
-        <div class="row">
-            <div class="col-12">
-                <h3>
-                    Tätigkeiten
-                </h3>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                <table class="table">
-                    <tbody>
-                        <tr>
-                            <td style="width: 170px;">
-                                2011 bis 2015
-                            </td>
-                            <td>
-                                Autor im Weblog Radverkehrspolitik
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td style="width: 170px;">
-                                2007 bis 2008
-                            </td>
-                            <td>
-                                Geschäftsführer und Entwickler in der Schülerfirma „United Colors sGmbH“
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td style="width: 170px;">
-                                2007
-                            </td>
-                            <td>
-                                Schulpraktikum beim Schleswig-Holsteinischen Zeitungsverlag, Rendsburg
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td style="width: 170px;">
-                                2006 bis 2009
-                            </td>
-                            <td>
-                                ehrenamtliche Fotografie und technische Unterstützung bei mehreren Veranstaltungen in Rendsburg
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td style="width: 170px;">
-                                2005 bis 2009
-                            </td>
-                            <td>
-                                Freier Mitarbeiter der Schleswig-Holsteinischen Landeszeitung
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td style="width: 170px;">
-                                2004
-                            </td>
-                            <td>
-                                Schulpraktikum bei der Sparkasse Mittelholstein, Rendsburg
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td style="width: 170px;">
-                                seit 2001
-                            </td>
-                            <td>
-                                Design und Entwicklung verschiedener Internetseiten
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td style="width: 170px;">
-                                1999 bis 2004
-                            </td>
-                            <td>
-                                Leichtathletik im Büdelsdorfer Turn- und Sportverein
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+    <div class="row">
+        <div class="col-12">
+            <p class="lead">
+                Mein Leben als kurze Zusammenfassung.
+            </p>
         </div>
     </div>
-</div>
+
+    <div class="row">
+        <div class="col-12 col-md-4">
+            <h3>
+                Leben
+            </h3>
+
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>
+                            geboren
+                        </td>
+                        <td>
+                            im Herbst 1988 in Rendsburg, Schleswig-Holstein
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Eltern
+                        </td>
+                        <td>
+                            Magdalena Kobold-Hübner, Studienrätin
+                            <br />
+                            Rainer Hübner, Oberstudienrat
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <h3>
+                Bildung
+            </h3>
+
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>
+                            2014 bis 2015
+                        </td>
+                        <td>
+                            Studium an der Fachhochschule Wedel, Studiengang Master IT-Sicherheit und Master Informatik (abgebrochen)
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            2009 bis 2014
+                        </td>
+                        <td>
+                            Studium an der Fachhochschule Wedel, Studiengang Bachelor Medieninformatik
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            1999 bis 2008
+                        </td>
+                        <td>
+                            Gymnasium-Kronwerk, Rendsburg
+                            <br />
+                            Schulabschluss: Allgemeine Hochschulreife
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            1995 bis 1999
+                        </td>
+                        <td>
+                            Friedrich-Ebert-Grundschule, Büdelsdorf
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <h3>
+                Arbeit
+            </h3>
+
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>
+                            seit April 2016
+                        </td>
+
+                        <td>
+                            Software-Entwickler bei der Bornholdt Lee GmbH, Hamburg
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Juni 2015 bis März 2016
+                        </td>
+                        <td>
+                            Software-Entwickler bei der HealthCare United GmbH & Co. KG, Hamburg
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            September 2014 bis Mai 2015
+                        </td>
+                        <td>
+                            Werkstudent bei der Jimdo GmbH, Hamburg
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Juni 2013 bis August 2014
+                        </td>
+                        <td>
+                            Werkstudent bei der PARSHIP GmbH, Hamburg
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            April 2013 bis Mai 2013
+                        </td>
+                        <td>
+                            Praktikant bei der ICANS GmbH, Hamburg
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            April 2012 bis März 2013
+                        </td>
+                        <td>
+                            Werkstudent bei der ICANS GmbH, Hamburg
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            2007 bis 2008
+                        </td>
+                        <td>
+                            Geschäftsführer und Entwickler in der Schülerfirma „United Colors sGmbH“
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            2005 bis 2009
+                        </td>
+                        <td>
+                            Freier Mitarbeiter der Schleswig-Holsteinischen Landeszeitung
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 {% endblock %}
