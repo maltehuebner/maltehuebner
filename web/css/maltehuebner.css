@@ -36,3 +36,19 @@ div.jumbotron h1 {
 img.img-circle {
     border-radius: 50%;
 }
+
+.card.project.abandoned img {
+    filter: grayscale(100%);
+}
+
+.card.project.abandoned h4.card-title a {
+    text-decoration: line-through;
+}
+
+.card.project.abandoned a {
+    color: black;
+}
+
+.card.project a {
+    text-decoration: underline;
+}
