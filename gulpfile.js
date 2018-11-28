@@ -10,8 +10,9 @@ sass.compiler = require('node-sass');
 /* Assets */
 
 gulp.task('copy-asset-images', function () {
-    return gulp.src('assets/img/*/*')
-        .pipe(gulp.dest('public/img/'));
+    return gulp.src('assets/images/*/*')
+        .pipe(gulp.src('assets/images/*'))
+        .pipe(gulp.dest('public/images/'));
 });
 
 gulp.task('copy-fonts', function () {
