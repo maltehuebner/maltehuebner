@@ -1,0 +1,121 @@
+{% extends 'layout.html.twig' %}
+
+{% set bodyId = 'frontpage' %}
+
+{% block bodyContent %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-4 mt-3">
+            <div class="row">
+                <div class="col-12">
+                    <img src="/images/malte.jpg" class="img-circle mx-auto d-block" id="maltehuebner" />
+                </div>
+            </div>
+
+            <div class="row mt-2">
+                <div class="col-12">
+                    <h1 class="text-center">
+                        Hej, ich bin Malte!
+                    </h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <p class="lead text-center">
+                        Ich mag schneeweiße Fahrräder und baue flexible Webanwendungen mit Symfony und PHP.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 text-center" style="font-size: 32px;">
+                    <a href="https://xing.com/profile/Malte_Huebner7">
+                        <i class="fab fa-xing mr-2" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="https://facebook.com/maltehuebner">
+                        <i class="fab fa-facebook mr-2" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="https://twitter.com/maltehuebner">
+                        <i class="fab fa-twitter mr-2" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="https://github.com/maltehuebner">
+                        <i class="fab fa-github mr-2" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="https://www.strava.com/athletes/1621303">
+                        <i class="fab fa-strava" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-12">
+                    <h3 class="text-center">
+                        <i class="far fa-check"></i>
+                        <a href="{{ path('page', { slug: 'faehigkeiten' }) }}">
+                            Fähigkeiten
+                        </a>
+                    </h3>
+
+                    <ul class="list-inline text-center">
+                        {% for skill in skills %}
+                            <li class="list-inline-item">
+                                {{ skill }}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row mt-1">
+                <div class="col-12">
+                    <h3 class="text-center">
+                        <i class="fas fa-file-text-o"></i>
+                        <a href="{{ path('page', { slug: 'lebenslauf' }) }}">
+                            Lebenslauf
+                        </a>
+                    </h3>
+
+                    <p class="text-center">
+                        Von 1988 bis heute: Die Stationen in meinem Lebenslauf — auch als <i class="far fa-table" aria-hidden="true"></i> <a href="{{ path('page', { slug: 'lebenslauf-kurz' }) }}">übersichtliche Tabelle</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mt-1">
+                <div class="col-12">
+                    <h3 class="text-center">
+                        <i class="far fa-bicycle"></i>
+                        <a href="{{ path('page', { slug: 'projekte' }) }}">
+                            Projekte
+                        </a>
+                    </h3>
+
+                    <p class="text-center">
+                        Was ich außer Radfahren und Symfony so treibe.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mt-1">
+                <div class="col-12">
+                    <h3 class="text-center">
+                        <i class="far fa-graduation-cap"></i>
+                        <a href="{{ path('page', { slug: 'studium' }) }}">
+                            Studium
+                        </a>
+                    </h3>
+
+                    <p class="text-center">
+                        Eine grobe Übersicht über sechs Jahre Medieninformatik und IT-Sicherheit an der Fachhochschule Wedel.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

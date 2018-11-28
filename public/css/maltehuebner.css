@@ -1,0 +1,54 @@
+body#frontpage div.container-fluid {
+    height: 1000px;
+    background-image: url(../images/background/berlin-calling.jpg);
+    background-position: center bottom;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 0 0 3px black;
+}
+
+body#frontpage a {
+    color: white;
+}
+
+body#frontpage a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+body#frontpage img#maltehuebner {
+    width: 240px;
+    height: 240px;
+}
+
+body#frontpage {
+    background: black;
+}
+
+div.jumbotron h1 {
+    text-align: right;
+    color: white;
+    text-shadow: 0 0 2px black;
+}
+
+img.img-circle {
+    border-radius: 50%;
+}
+
+.card.project.abandoned img {
+    filter: grayscale(100%);
+}
+
+.card.project.abandoned h4.card-title a {
+    text-decoration: line-through;
+}
+
+.card.project.abandoned a {
+    color: black;
+}
+
+.card.project a {
+    text-decoration: underline;
+}
