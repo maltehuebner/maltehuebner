@@ -37,7 +37,7 @@ gulp.task('compress-css', ['sass'], function () {
             'assets/css/*',
         ])
         .pipe(cleanCSS())
-        .pipe(concat('luft.min.css'))
+        .pipe(concat('malte.min.css'))
         .pipe(gulp.dest('public/css/'));
 });
 
