@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ab815e749e32453a1e27cbe099179112",
+    "content-hash": "2764292f01ebeafdf24dbe20fcf713bb",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1012,16 +1012,16 @@
         },
         {
             "name": "symfony/asset",
-            "version": "v4.0.14",
+            "version": "v4.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/asset.git",
-                "reference": "6217d5d6a2fd95dc25b4d225be6fbdbf4ef1118c"
+                "reference": "5327166969f35307510138c4f47a5110cd9395f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/asset/zipball/6217d5d6a2fd95dc25b4d225be6fbdbf4ef1118c",
-                "reference": "6217d5d6a2fd95dc25b4d225be6fbdbf4ef1118c",
+                "url": "https://api.github.com/repos/symfony/asset/zipball/5327166969f35307510138c4f47a5110cd9395f5",
+                "reference": "5327166969f35307510138c4f47a5110cd9395f5",
                 "shasum": ""
             },
             "require": {
@@ -1037,7 +1037,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.0-dev"
+                    "dev-master": "4.1-dev"
                 }
             },
             "autoload": {
@@ -1064,7 +1064,7 @@
             ],
             "description": "Symfony Asset Component",
             "homepage": "https://symfony.com",
-            "time": "2018-07-26T09:08:35+00:00"
+            "time": "2018-11-11T19:51:29+00:00"
         },
         {
             "name": "symfony/cache",
@@ -1390,16 +1390,16 @@
         },
         {
             "name": "symfony/expression-language",
-            "version": "v4.0.14",
+            "version": "v4.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/expression-language.git",
-                "reference": "92f80137c9fe09e6439f77641315d640843d0c4a"
+                "reference": "14dcc63f0496ecb1ea42b7c9ac8b4d65ce05d29e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/expression-language/zipball/92f80137c9fe09e6439f77641315d640843d0c4a",
-                "reference": "92f80137c9fe09e6439f77641315d640843d0c4a",
+                "url": "https://api.github.com/repos/symfony/expression-language/zipball/14dcc63f0496ecb1ea42b7c9ac8b4d65ce05d29e",
+                "reference": "14dcc63f0496ecb1ea42b7c9ac8b4d65ce05d29e",
                 "shasum": ""
             },
             "require": {
@@ -1409,7 +1409,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.0-dev"
+                    "dev-master": "4.1-dev"
                 }
             },
             "autoload": {
@@ -1436,7 +1436,7 @@
             ],
             "description": "Symfony ExpressionLanguage Component",
             "homepage": "https://symfony.com",
-            "time": "2018-07-26T09:08:35+00:00"
+            "time": "2018-11-11T19:51:29+00:00"
         },
         {
             "name": "symfony/filesystem",
@@ -1587,16 +1587,16 @@
         },
         {
             "name": "symfony/framework-bundle",
-            "version": "v4.0.14",
+            "version": "v4.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/framework-bundle.git",
-                "reference": "6d2edab310f0010fe0797b7aa9be2b64cc135990"
+                "reference": "a42d1ab93ef22310f079f6099144418a36d363fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/framework-bundle/zipball/6d2edab310f0010fe0797b7aa9be2b64cc135990",
-                "reference": "6d2edab310f0010fe0797b7aa9be2b64cc135990",
+                "url": "https://api.github.com/repos/symfony/framework-bundle/zipball/a42d1ab93ef22310f079f6099144418a36d363fc",
+                "reference": "a42d1ab93ef22310f079f6099144418a36d363fc",
                 "shasum": ""
             },
             "require": {
@@ -1604,14 +1604,14 @@
                 "php": "^7.1.3",
                 "symfony/cache": "~3.4|~4.0",
                 "symfony/config": "~3.4|~4.0",
-                "symfony/dependency-injection": "^3.4.3|^4.0.3",
-                "symfony/event-dispatcher": "~3.4|~4.0",
+                "symfony/dependency-injection": "^4.1.1",
+                "symfony/event-dispatcher": "^4.1",
                 "symfony/filesystem": "~3.4|~4.0",
                 "symfony/finder": "~3.4|~4.0",
-                "symfony/http-foundation": "~3.4|~4.0",
-                "symfony/http-kernel": "~3.4|~4.0",
+                "symfony/http-foundation": "^4.1",
+                "symfony/http-kernel": "^4.1",
                 "symfony/polyfill-mbstring": "~1.0",
-                "symfony/routing": "^3.4.5|^4.0.5"
+                "symfony/routing": "^4.1"
             },
             "conflict": {
                 "phpdocumentor/reflection-docblock": "<3.0",
@@ -1619,13 +1619,15 @@
                 "phpunit/phpunit": "<4.8.35|<5.4.3,>=5.0",
                 "symfony/asset": "<3.4",
                 "symfony/console": "<3.4",
-                "symfony/form": "<3.4",
+                "symfony/form": "<4.1",
+                "symfony/messenger": ">=4.2",
                 "symfony/property-info": "<3.4",
-                "symfony/serializer": "<3.4",
+                "symfony/serializer": "<4.1",
                 "symfony/stopwatch": "<3.4",
                 "symfony/translation": "<3.4",
-                "symfony/validator": "<3.4",
-                "symfony/workflow": "<3.4"
+                "symfony/twig-bridge": "<4.1.1",
+                "symfony/validator": "<4.1",
+                "symfony/workflow": "<4.1"
             },
             "require-dev": {
                 "doctrine/annotations": "~1.0",
@@ -1638,22 +1640,23 @@
                 "symfony/css-selector": "~3.4|~4.0",
                 "symfony/dom-crawler": "~3.4|~4.0",
                 "symfony/expression-language": "~3.4|~4.0",
-                "symfony/form": "~3.4|~4.0",
+                "symfony/form": "^4.1",
                 "symfony/lock": "~3.4|~4.0",
+                "symfony/messenger": "^4.1",
                 "symfony/polyfill-intl-icu": "~1.0",
                 "symfony/process": "~3.4|~4.0",
                 "symfony/property-info": "~3.4|~4.0",
                 "symfony/security": "~3.4|~4.0",
                 "symfony/security-core": "~3.4|~4.0",
                 "symfony/security-csrf": "~3.4|~4.0",
-                "symfony/serializer": "~3.4|~4.0",
+                "symfony/serializer": "^4.1",
                 "symfony/stopwatch": "~3.4|~4.0",
                 "symfony/templating": "~3.4|~4.0",
                 "symfony/translation": "~3.4|~4.0",
-                "symfony/validator": "~3.4|~4.0",
+                "symfony/validator": "^4.1",
                 "symfony/var-dumper": "~3.4|~4.0",
                 "symfony/web-link": "~3.4|~4.0",
-                "symfony/workflow": "~3.4|~4.0",
+                "symfony/workflow": "^4.1",
                 "symfony/yaml": "~3.4|~4.0",
                 "twig/twig": "~1.34|~2.4"
             },
@@ -1670,7 +1673,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.0-dev"
+                    "dev-master": "4.1-dev"
                 }
             },
             "autoload": {
@@ -1697,7 +1700,7 @@
             ],
             "description": "Symfony FrameworkBundle",
             "homepage": "https://symfony.com",
-            "time": "2018-08-01T08:23:45+00:00"
+            "time": "2018-11-20T16:14:00+00:00"
         },
         {
             "name": "symfony/http-foundation",
@@ -2198,40 +2201,40 @@
         },
         {
             "name": "symfony/twig-bundle",
-            "version": "v4.0.14",
+            "version": "v4.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/twig-bundle.git",
-                "reference": "6876f65231e2db4a555c211b68ff91f37b6f7dc9"
+                "reference": "7d46939a25e76d7395b17219c9befcd16c6b2226"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/twig-bundle/zipball/6876f65231e2db4a555c211b68ff91f37b6f7dc9",
-                "reference": "6876f65231e2db4a555c211b68ff91f37b6f7dc9",
+                "url": "https://api.github.com/repos/symfony/twig-bundle/zipball/7d46939a25e76d7395b17219c9befcd16c6b2226",
+                "reference": "7d46939a25e76d7395b17219c9befcd16c6b2226",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1.3",
                 "symfony/config": "~3.4|~4.0",
-                "symfony/http-foundation": "~3.4|~4.0",
-                "symfony/http-kernel": "~3.4|~4.0",
+                "symfony/http-foundation": "~4.1",
+                "symfony/http-kernel": "~4.1",
                 "symfony/polyfill-ctype": "~1.8",
                 "symfony/twig-bridge": "^3.4.3|^4.0.3",
                 "twig/twig": "~1.34|~2.4"
             },
             "conflict": {
-                "symfony/dependency-injection": "<3.4",
-                "symfony/event-dispatcher": "<3.4"
+                "symfony/dependency-injection": "<4.1",
+                "symfony/framework-bundle": "<4.1"
             },
             "require-dev": {
                 "doctrine/annotations": "~1.0",
                 "doctrine/cache": "~1.0",
                 "symfony/asset": "~3.4|~4.0",
-                "symfony/dependency-injection": "~3.4|~4.0",
+                "symfony/dependency-injection": "~4.1",
                 "symfony/expression-language": "~3.4|~4.0",
                 "symfony/finder": "~3.4|~4.0",
                 "symfony/form": "~3.4|~4.0",
-                "symfony/framework-bundle": "~3.4|~4.0",
+                "symfony/framework-bundle": "~4.1",
                 "symfony/routing": "~3.4|~4.0",
                 "symfony/stopwatch": "~3.4|~4.0",
                 "symfony/templating": "~3.4|~4.0",
@@ -2241,7 +2244,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.0-dev"
+                    "dev-master": "4.1-dev"
                 }
             },
             "autoload": {
@@ -2268,20 +2271,20 @@
             ],
             "description": "Symfony TwigBundle",
             "homepage": "https://symfony.com",
-            "time": "2018-07-26T09:08:35+00:00"
+            "time": "2018-11-11T19:51:29+00:00"
         },
         {
             "name": "symfony/yaml",
-            "version": "v4.0.14",
+            "version": "v4.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "05f66d707cfa60d553e419ec038d5474c2d5d1f2"
+                "reference": "fe87e3b24d15ec8948f0280ee867a65ca44fdbaa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/05f66d707cfa60d553e419ec038d5474c2d5d1f2",
-                "reference": "05f66d707cfa60d553e419ec038d5474c2d5d1f2",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/fe87e3b24d15ec8948f0280ee867a65ca44fdbaa",
+                "reference": "fe87e3b24d15ec8948f0280ee867a65ca44fdbaa",
                 "shasum": ""
             },
             "require": {
@@ -2300,7 +2303,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.0-dev"
+                    "dev-master": "4.1-dev"
                 }
             },
             "autoload": {
@@ -2327,7 +2330,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2018-07-26T11:22:46+00:00"
+            "time": "2018-11-11T19:51:29+00:00"
         },
         {
             "name": "twig/twig",
@@ -2568,16 +2571,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v4.1.6",
+            "version": "v4.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "dc7122fe5f6113cfaba3b3de575d31112c9aa60b"
+                "reference": "c74f4d1988dfcd8760273e53551694da32b056d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/dc7122fe5f6113cfaba3b3de575d31112c9aa60b",
-                "reference": "dc7122fe5f6113cfaba3b3de575d31112c9aa60b",
+                "url": "https://api.github.com/repos/symfony/console/zipball/c74f4d1988dfcd8760273e53551694da32b056d0",
+                "reference": "c74f4d1988dfcd8760273e53551694da32b056d0",
                 "shasum": ""
             },
             "require": {
@@ -2632,7 +2635,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-03T08:15:46+00:00"
+            "time": "2018-11-26T14:00:40+00:00"
         },
         {
             "name": "symfony/css-selector",
@@ -2746,16 +2749,16 @@
         },
         {
             "name": "symfony/dotenv",
-            "version": "v4.0.14",
+            "version": "v4.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dotenv.git",
-                "reference": "4c53971118849f64a31129ab457042eb854e86ac"
+                "reference": "963fc7f36f81315e31831d6cd96c9578ec184059"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dotenv/zipball/4c53971118849f64a31129ab457042eb854e86ac",
-                "reference": "4c53971118849f64a31129ab457042eb854e86ac",
+                "url": "https://api.github.com/repos/symfony/dotenv/zipball/963fc7f36f81315e31831d6cd96c9578ec184059",
+                "reference": "963fc7f36f81315e31831d6cd96c9578ec184059",
                 "shasum": ""
             },
             "require": {
@@ -2767,7 +2770,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.0-dev"
+                    "dev-master": "4.1-dev"
                 }
             },
             "autoload": {
@@ -2799,7 +2802,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2018-07-26T11:22:46+00:00"
+            "time": "2018-11-26T10:26:29+00:00"
         },
         {
             "name": "symfony/maker-bundle",
@@ -3355,16 +3358,16 @@
         },
         {
             "name": "symfony/web-server-bundle",
-            "version": "v4.0.14",
+            "version": "v4.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/web-server-bundle.git",
-                "reference": "7408f0d9b1c21629a6198019dc0231db3974d70d"
+                "reference": "46e499c664c226be4c8d985567aa2f6a77152909"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/web-server-bundle/zipball/7408f0d9b1c21629a6198019dc0231db3974d70d",
-                "reference": "7408f0d9b1c21629a6198019dc0231db3974d70d",
+                "url": "https://api.github.com/repos/symfony/web-server-bundle/zipball/46e499c664c226be4c8d985567aa2f6a77152909",
+                "reference": "46e499c664c226be4c8d985567aa2f6a77152909",
                 "shasum": ""
             },
             "require": {
@@ -3383,7 +3386,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.0-dev"
+                    "dev-master": "4.1-dev"
                 }
             },
             "autoload": {
@@ -3410,7 +3413,7 @@
             ],
             "description": "Symfony WebServerBundle",
             "homepage": "https://symfony.com",
-            "time": "2018-07-26T09:08:35+00:00"
+            "time": "2018-11-11T19:51:29+00:00"
         }
     ],
     "aliases": [],
