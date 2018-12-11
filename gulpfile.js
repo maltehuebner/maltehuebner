@@ -16,8 +16,8 @@ gulp.task('copy-asset-images', function () {
 });
 
 gulp.task('copy-fonts', function () {
-    return gulp.src('node_modules/font-awesome/fonts/*')
-        .pipe(gulp.dest('public/fonts'));
+    return gulp.src('node_modules/@fortawesome/fontawesome-pro/webfonts/*')
+        .pipe(gulp.dest('public/webfonts'));
 });
 
 gulp.task('build-assets', ['copy-asset-images', 'copy-fonts']);
@@ -34,7 +34,7 @@ gulp.task('sass', function () {
 gulp.task('compress-css', ['sass'], function () {
     return gulp.src([
             'node_modules/bootstrap/dist/css/bootstrap.css',
-            'node_modules/font-awesome/css/font-awesome.css',
+            'node_modules/@fortawesome/fontawesome-pro/css/all.min.css',
             'assets/css/*',
         ])
         .pipe(cleanCSS())
@@ -62,6 +62,7 @@ gulp.task('compress-js', function () {
 
 gulp.task('copy-js-external', function () {
     return gulp.src([
+        //'node_modules/@fortawesome/font-awesome-pro/all.min.js',
         'node_modules/jquery/dist/jquery.min.js',
         'node_modules/popper.js/dist/popper.min.js',
         'node_modules/bootstrap/dist/js/bootstrap.min.js',
@@ -71,6 +72,6 @@ gulp.task('copy-js-external', function () {
 
 gulp.task('build-js', ['compress-js', 'copy-js-external']);
 
-gulp.task('build', ['build-assets', 'build-js', 'build-css']);
+gulp.task('build', ['build-assets', 'build-js', 'build-css', 'copy-fonts']);
 
 gulp.task('default', ['build']);
