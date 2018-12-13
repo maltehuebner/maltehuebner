@@ -31,7 +31,7 @@ gulp.task('copy-asset-images', function () {
     gulp.src('assets/images/resized/*')
         .pipe(gulp.dest('public/images/resized/'));
 
-    return gulp.src('assets/images/*/*')
+    return gulp.src('assets/images/*')
         .pipe(gulp.dest('public/images/'));
 });
 
