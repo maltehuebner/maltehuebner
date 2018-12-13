@@ -17,7 +17,7 @@ class DefaultController extends Controller
         $templateName = sprintf('content/%s.html.twig', $slug);
 
         return $this->render($templateName, [
-            'skills' => $skillList
+            'skills' => $skillList->getList(),
         ]);
     }
 }
