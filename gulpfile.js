@@ -3,9 +3,21 @@ let minify = require('gulp-minify');
 let cleanCSS = require('gulp-clean-css');
 let concat = require('gulp-concat');
 let urlAdjuster = require('gulp-css-replace-url');
+let imageResize = require('gulp-image-resize');
 
 let sass = require('gulp-sass');
 sass.compiler = require('node-sass');
+
+/* Resize images */
+gulp.task('resize-asset-images', function () {
+    gulp.src('assets/images/full-size/*')
+        .pipe(imageResize({
+            width : 1024,
+            height : 833,
+            upscale : false
+        }))
+        .pipe(gulp.dest('public/images/resized'));
+});
 
 /* Assets */
 
