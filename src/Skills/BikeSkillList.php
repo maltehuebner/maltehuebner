@@ -2,7 +2,7 @@
 
 namespace App\Skills;
 
-class BikeSkillList extends AbstractSkillList
+class BikeSkillList extends IterableSkillList
 {
     protected $list = ['Radfahren', 'Radverkehrspolitik', 'Bürgerbeteiligung', 'Critical Mass', 'Fotografie', 'Journalismus', 'Verkehrsrecht'];
 
