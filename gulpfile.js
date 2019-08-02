@@ -31,6 +31,9 @@ gulp.task('copy-asset-images', function () {
     gulp.src('assets/images/resized/*')
         .pipe(gulp.dest('public/images/resized/'));
 
+    gulp.src('assets/images/background/*')
+        .pipe(gulp.dest('public/images/background/'));
+
     return gulp.src('assets/images/*')
         .pipe(gulp.dest('public/images/'));
 });
