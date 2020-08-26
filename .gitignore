@@ -18,3 +18,9 @@
 
 .idea
 .env
+node_modules
+assets/css
+public/css
+public/images
+public/js
+public/webfonts
